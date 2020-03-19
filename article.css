@@ -194,7 +194,6 @@ header {
   box-sizing: border-box;
   flex-grow: 1;
   width: 30%;
-  padding: 1%;
 }
 
 @media screen and (max-width: 600px) {
