@@ -13,25 +13,25 @@
 <header>
   <div class="header-img">
     <h1 class="word">
-        <span class="char">P A W</span>
-    <br>
-        <span class="desc">Pastries Around the World</span>
-  </h1>
+      <span class="char">P A W</span>
+      <br>
+      <span class="desc">Pastries Around the World</span>
+    </h1>
   </div>
 
 
-<div class="header-nav">
-  <div class="logo">
-    <a href="index.html"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
-  </div>
+  <div class="header-nav">
+    <div class="logo">
+      <a href="index.html"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
+    </div>
 
-  <nav class="nav">
-    <a href="index.html" class="active" title="Accueil">Home</a>
-    <a href="concept.html" title="Presentation">Presentation</a>
-    <a href="gallery.html" title="Gallery">Gallery</a>
-    <a href="contact.html" title="Contact">Contact</a>
-  </nav>
-</div>
+    <nav class="nav">
+      <a href="index.html" class="active" title="Accueil">Home</a>
+      <a href="concept.html" title="Presentation">Presentation</a>
+      <a href="gallery.html" title="Gallery">Gallery</a>
+      <a href="contact.html" title="Contact">Contact</a>
+    </nav>
+  </div>
 
 </header>
 
@@ -45,52 +45,61 @@
     <a href="contact.html"><i class="fas fa-at"></i></a>
   </div>
   <!-- End Nav-bar -->
+
+  <div class="toggle">
+    <input type="checkbox" onclick="myFunction()">
+    <label data-off="&#9724;" data-on="&#9654;"></label>
+  </div>
+
   <!-- START CARDS -->
   <div class="container1">
-
-    <figure class="bloc">
+    <div class="bloc">
       <a href="article-south-america.html"><img class="cards" src="img/americadelsur.jpg" alt="Avatar">
-        <figcaption>South America</figcaption>
+        <div>
+          <h2>South America</h2>
+        </div>
       </a>
-    </figure>
-
-
-    <figure class="bloc">
+    </div>
+ 
+    <div class="bloc">
       <a href="article-north-america.html"><img class="cards" src="img/americadelnorte.jpg" alt="Avatar">
-        <figcaption>North America</figcaption>
+        <div>
+          <h2>North America</h2>
+        </div>
       </a>
-    </figure>
+    </div>
 
-
-    <figure class="bloc">
+    <div class="bloc">
       <a href="article-africa.html"><img class="cards" src="img/africa.jpg" alt="Avatar">
-        <figcaption>Africa</figcaption>
+        <div>
+          <h2>Africa</h2>
+        </div>
       </a>
-    </figure>
+    </div>
 
-
-    <figure class="bloc">
+    <div class="bloc">
       <a href="article-oceania.html"><img class="cards" src="img/oceania.jpg" alt="Avatar">
-        <figcaption>Oceania</figcaption>
+        <div>
+          <h2>Oceania</h2>
+        </div>
       </a>
-    </figure>
+    </div>
 
-
-    <figure class="bloc">
+    <div class="bloc">
       <a href="article-asia.html"><img class="cards" src="img/asia.jpg" alt="Avatar">
-        <figcaption>Asia</figcaption>
+        <div>
+          <h2>Asia</h2>
+        </div>
       </a>
-    </figure>
+    </div>
 
-
-    <figure class="bloc">
+    <div class="bloc">
       <a href="article-europe.html"><img class="cards" src="img/europe.jpg" alt="Avatar">
-        <figcaption>Europe</figcaption>
+        <div>
+          <h2>Europe</h2>
+        </div>
       </a>
-    </figure>
-
-
-
+    </div>
   </div>
   <!-- END CARDS -->
   <footer>
@@ -123,6 +132,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
