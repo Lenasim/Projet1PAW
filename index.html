@@ -8,6 +8,8 @@
   <meta name="author" content="Margot,Lena,Maxime,Tada,Florent,Jeremie,Aurélien">
   <meta name="description" content="Premier Projet Wild code school">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="path/to/swiper.min.css">
 </head>
 
 <header>
@@ -46,61 +48,67 @@
   </div>
   <!-- End Nav-bar -->
 
+  <!-- dark mode toggle -->
   <div class="toggle">
     <input type="checkbox" onclick="myFunction()">
     <label data-off="&#9724;" data-on="&#9654;"></label>
   </div>
 
-  <!-- START CARDS -->
-  <div class="container1">
-    <div class="bloc">
-      <a href="article-south-america.html"><img class="cards" src="img/americadelsur.jpg" alt="Avatar">
-        <div>
-          <h2>South America</h2>
+  <!-- continent cards -->
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bloc">
+          <a href="article-south-america.html">
+            <img class="cards" src="img/americadelsur.jpg" alt="Avatar">
+            <div>
+              <h2>South America</h2>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
- 
-    <div class="bloc">
-      <a href="article-north-america.html"><img class="cards" src="img/americadelnorte.jpg" alt="Avatar">
-        <div>
-          <h2>North America</h2>
-        </div>
-      </a>
-    </div>
+        <div class="swiper-slide bloc">
+          <a href="article-north-america.html"><img class="cards" src="img/americadelnorte.jpg" alt="Avatar">
+            <div>
+              <h2>North America</h2>
+            </div>
+          </a></div>
+        <div class="swiper-slide bloc">
+          <a href="article-africa.html"><img class="cards" src="img/africa.jpg" alt="Avatar">
+            <div>
+              <h2>Africa</h2>
+            </div>
+          </a></div>
+        <div class="swiper-slide bloc">
+          <a href="article-oceania.html"><img class="cards" src="img/oceania.jpg" alt="Avatar">
+            <div>
+              <h2>Oceania</h2>
+            </div>
+          </a></div>
+        <div class="swiper-slide bloc">
+          <a href="article-asia.html"><img class="cards" src="img/asia.jpg" alt="Avatar">
+            <div>
+              <h2>Asia</h2>
+            </div>
+          </a></div>
+        <div class="swiper-slide bloc">
+          <a href="article-europe.html"><img class="cards" src="img/europe.jpg" alt="Avatar">
+            <div>
+              <h2>Europe</h2>
+            </div>
+          </a></div>
+      </div>
 
-    <div class="bloc">
-      <a href="article-africa.html"><img class="cards" src="img/africa.jpg" alt="Avatar">
-        <div>
-          <h2>Africa</h2>
-        </div>
-      </a>
-    </div>
-
-    <div class="bloc">
-      <a href="article-oceania.html"><img class="cards" src="img/oceania.jpg" alt="Avatar">
-        <div>
-          <h2>Oceania</h2>
-        </div>
-      </a>
-    </div>
-
-    <div class="bloc">
-      <a href="article-asia.html"><img class="cards" src="img/asia.jpg" alt="Avatar">
-        <div>
-          <h2>Asia</h2>
-        </div>
-      </a>
-    </div>
-
-    <div class="bloc">
-      <a href="article-europe.html"><img class="cards" src="img/europe.jpg" alt="Avatar">
-        <div>
-          <h2>Europe</h2>
-        </div>
-      </a>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
+
+
+
+
+
+
   <!-- END CARDS -->
   <footer>
     <!-- footer en colonne comme la quete 8 flexbox -->
@@ -133,6 +141,11 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="path/to/swiper.min.js"></script>
   <script src="script.js"></script>
 </body>
 
