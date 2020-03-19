@@ -1,29 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 body {
     margin: 0;
     font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
 
-/* *,
-*::before,
-*::after {
-	box-sizing: border-box;
-} */
-
 /*new header*/
-
-.word {
-    color: #fff;
-    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    max-width: 53.33rem;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    transform: translateY(-50%);
-    top: 50%;
-    text-align: center;
-}
 
 .header-img {
     position: relative;
@@ -37,19 +20,35 @@ body {
     height: 130px;
 }
 
-.char {
-    font-family: 'Open Sans';
-    font-size: 8vw;
-    margin-bottom: 0.25385rem;
-    letter-spacing: 0.9rem;
-    font-weight: 700;
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.word {
+    font-family: 'Staatliches', cursive;
+  font-size: 16vw;
+  letter-spacing: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: pink;
+  -webkit-text-stroke: 1.5px rgb(255, 0, 0, 0.1);
+}
+.header-text-s {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .desc {
-    font-family: 'Open Sans';
-    font-size: 3vw;
-    font-weight: 100;
+    font-family: 'Staatliches', cursive;
+    font-size: 2vw;
+    letter-spacing: 7px;
+    font-weight: 500;
     margin-bottom: 0.825rem;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {

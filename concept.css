@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 body {
     margin: 0;
     font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
+
 /*new header*/
-.word {
-    color: #fff;
-    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    max-width: 53.33rem;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    transform: translateY(-50%);
-    top:50%;
-    text-align: center;
-}
+
 .header-img {
     position: relative;
     overflow: hidden;
@@ -23,30 +15,52 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top
-        right / cover;
+    background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top right / cover;
     padding: 5em;
-    height: 159px;
+    height: 130px;
 }
-.char {
-    font-family: 'Open Sans';
-    font-size: 8vw;
-    margin-bottom: 0.25385rem;
-    letter-spacing: 0.9rem;
-    font-weight: 700;
+
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.word {
+    font-family: 'Staatliches', cursive;
+    font-size: 16vw;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: pink;
+    -webkit-text-stroke: 1.5px rgb(255, 0, 0, 0.1);
+}
+
+.header-text-s {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .desc {
-    font-family: 'Open Sans';
-    font-size: 3vw;
-    font-weight: 100;
+    font-family: 'Staatliches', cursive;
+    font-size: 2vw;
+    letter-spacing: 7px;
+    font-weight: 500;
     margin-bottom: 0.825rem;
+    color: white;
 }
+
 @media screen and (max-width: 600px) {
     .header-img {
-    display: none;
+        display: none;
     }
 }
+
 /* nav bar desktop */
+
 .header-nav {
     position: relative;
     display: flex;
@@ -54,29 +68,34 @@ body {
     align-items: center;
     background: linear-gradient(to right, #904E95, #E96443);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-    padding-right: 87px;
-    font-size: 1.2em;
+    padding-right: 80px;
 }
+
 .logo {
     border-radius: 50%;
     width: 110px;
     height: 110px;
 }
+
 .nav a {
     list-style-type: none;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 26.5px;
+    font-size: 1.5em;
     padding: 0 15px;
 }
+
 .nav a:hover {
     color: #FAF0E6;
 }
- /* Start Concept & About me CSS  */
+
+/* Start Concept & About me CSS  */
+
 .aboutme {
-    text-align: center ;
+    text-align: center;
 }
+
 .proj {
     font-family: 'Open Sans';
     font-size: 1rem;
@@ -84,34 +103,40 @@ body {
     letter-spacing: 0.3rem;
     color: #3A3836;
 }
+
 .cap-let {
     font-family: 'Open Sans';
     font-size: 4.5rem;
     font-weight: bold;
     letter-spacing: -0.2rem;
 }
-.aboutme h1{
+
+.aboutme h1 {
     font-family: 'Open Sans';
     font-size: 2.5rem;
     font-weight: bold;
     color: #E96443;
     letter-spacing: -0.2rem;
 }
-.aboutme h2{
+
+.aboutme h2 {
     margin: 8%;
     font-size: 2rem;
 }
-.aboutme h3{
+
+.aboutme h3 {
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 40px;
     padding-right: 40px;
 }
-.text-concept{
+
+.text-concept {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 55px;
 }
+
 .aboutme img {
     display: block;
     margin-left: auto;
@@ -119,10 +144,11 @@ body {
     width: 80%;
     height: auto;
     border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
 }
+
 @media screen and (max-width: 600px) {
     .aboutme img {
         display: block;
@@ -131,13 +157,16 @@ body {
         width: 100%;
         height: auto;
         border-radius: 20px;
-        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
     }
 }
+
 /* End concept & about me */
+
 /*  START FOOTER  */
+
 footer {
     background: #E96443;
     /* fallback for old browsers */
@@ -152,30 +181,39 @@ footer {
     -moz-box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
 }
+
 footer a {
     text-decoration: none;
 }
+
 .footer-desktop {
     color: white;
     font-size: 15px;
 }
+
 .follow {
     color: white;
     font-size: 20px;
 }
+
 .title-footer {
     font-size: 20px;
 }
+
 a.footer-link {
     color: white;
 }
+
 a.footer-link:hover {
     color: #FAF0E6;
 }
+
 .a-follow {
     margin: 5px;
 }
+
 /* END FOOTER */
+
 @media screen and (min-width: 601px) {
     .a-follow:hover {
         opacity: 0.8;
@@ -212,7 +250,7 @@ a.footer-link:hover {
         display: none;
     }
     .header-nav {
-        height: 88px;
+        height: 80px;
     }
     footer {
         height: 100px;
@@ -223,6 +261,7 @@ a.footer-link:hover {
         height: 70px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .bloc {
         width: 70%;
