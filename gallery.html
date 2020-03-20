@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="The coolest pastries in the world !">
   <link href="gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
 </head>
 
@@ -25,18 +26,18 @@
   <!-- end -->
 
 
-<div class="header-nav">
-  <div class="logo">
-    <a href="index.html"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
-  </div>
+  <div class="header-nav">
+    <div class="logo">
+      <a href="index.html"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
+    </div>
 
-  <nav class="nav">
-    <a href="index.html" title="Accueil">Home</a>
-    <a href="concept.html" title="Presentation">Presentation</a>
-    <a href="gallery.html" title="Gallery">Gallery</a>
-    <a href="contact.html" title="Contact">Contact</a>
- </nav>
-</div>
+    <nav class="nav">
+      <a href="index.html" title="Accueil">Home</a>
+      <a href="concept.html" title="Presentation">Presentation</a>
+      <a href="gallery.html" title="Gallery">Gallery</a>
+      <a href="contact.html" title="Contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <body>
@@ -46,110 +47,265 @@
     <a href="concept.html"><i class="fas fa-globe-africa"></i></a>
     <a href="#contact.html"><i class="fas fa-at"></i></a>
   </div>
-<div class="container">
 
-  <h1 class="heading"> <span>A visual trip for pastries lovers all around the world</span></h1>
+  <div class="container">
 
-  <div class="gallery">
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Africa/Square/africa-cake-2-square.jpg" alt="africa pastry">
+    <!-- intro sentence -->
+    <h1 class="heading"> <span>A visual trip for pastries lovers all around the world</span></h1>
+
+    <!-- js modal gallery -->
+    <!-- photos on the page -->
+    <div class="gallery">
+      <div class="row">
+        <div class="column">
+          <img src="paw-images/Oceania/Square/oceania-cake-2-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <button class="likebutton" onclick="add1()">
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> LIKE
+            <input type="text" value="0" id="output">
+          </button>
+        </div>
+        <div class="column">
+          <img src="paw-images/Europe/Square/europe-cake-1-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <button class="likebutton" onclick="add1()">
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> LIKE
+            <input type="text" value="0" id="output">
+          </button>
+        </div>
+        <div class="column">
+          <img src="paw-images/North-America/Square/north-america-cake-2-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <button class="likebutton" onclick="add1">
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> LIKE
+            <input type="text" value="0" id="output">
+          </button>
+        </div>
+        <div class="column">
+          <img src="paw-images/Asia/Square/asia-cake-2-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          <button class="likebutton" onclick="add1">
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> LIKE
+            <input type="text" value="0" id="output">
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="paw-images/Europe/Square/europe-cake-2-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="paw-images/Europe/Square/europe-cake-3-square.jpeg" style="width:100%"
+            onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="paw-images/North-America/Square/north-america-cake-1-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="paw-images/North-America/Square/north-america-cake-3-square.jpg" style="width:100%"
+            onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+      </div>
     </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-2-square.jpg">
+    <!-- photos modal page -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 15</div>
+          <img src="paw-images/Oceania/Square/oceania-cake-2-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 15</div>
+          <img src="paw-images/Europe/Square/europe-cake-1-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 15</div>
+          <img src="paw-images/North-America/Square/north-america-cake-2-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 15</div>
+          <img src="paw-images/Asia/Square/asia-cake-2-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 15</div>
+          <img src="paw-images/Europe/Square/europe-cake-2-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 15</div>
+          <img src="paw-images/Europe/Square/europe-cake-3-square.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 15</div>
+          <img src="paw-images/North-America/Square/north-america-cake-1-square.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 15</div>
+          <img src="paw-images/North-America/Square/north-america-cake-3-square.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor" src="paw-images/Oceania/Square/oceania-cake-2-square.jpg" style="width:100%"
+            onclick="currentSlide(1)" alt="sweet pick of PAW 1">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/Europe/Square/europe-cake-1-square.jpg" style="width:100%"
+            onclick="currentSlide(2)" alt="sweet pick of PAW 2">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/North-America/Square/north-america-cake-2-square.jpg"
+            style="width:100%" onclick="currentSlide(3)" alt="sweet pick of PAW 3">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/Asia/Square/asia-cake-2-square.jpg" style="width:100%"
+            onclick="currentSlide(4)" alt="sweet pick of PAW 4">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/Europe/Square/europe-cake-2-square.jpg" style="width:100%"
+            onclick="currentSlide(5)" alt="sweet pick of PAW 5">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/Europe/Square/europe-cake-3-square.jpeg" style="width:100%"
+            onclick="currentSlide(6)" alt="sweet pick of PAW 6">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/North-America/Square/north-america-cake-1-square.jpg"
+            style="width:100%" onclick="currentSlide(7)" alt="sweet pick of PAW 7">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="paw-images/North-America/Square/north-america-cake-3-square.jpg"
+            style="width:100%" onclick="currentSlide(8)" alt="sweet pick of PAW 8">
+        </div>
+      </div>
     </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-1-square.jpg" alt="2">
-    </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-2-square.jpg" alt="3">
-    </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Asia/Square/asia-cake-2-square.jpg" alt="4">
-    </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-2-square.jpg" alt="5">
-    </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-3-square.jpeg" alt="6">
-    </div>
+    <!-- original gallery -->
+    <br>
+    <!-- <div class="gallery">
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-1-square.jpg" alt="7">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Africa/Square/africa-cake-2-square.jpg" alt="africa pastry">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-3-square.jpg" alt="8">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-2-square.jpg">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-1-square.jpg" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-1-square.jpg" alt="2">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-3-square.jpg" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-2-square.jpg" alt="3">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-1-square.jpg" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Asia/Square/asia-cake-2-square.jpg" alt="4">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-2-square.JPG" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-2-square.jpg" alt="5">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-3-square.jpg" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Europe/Square/europe-cake-3-square.jpeg" alt="6">
+      </div>
 
-    <div class="gallery-item">
-      <img class="gallery-image" src="paw-images/Africa/Square/africa-cake-3-3:4.jpeg" alt="9">
-    </div>
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-1-square.jpg" alt="7">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/North-America/Square/north-america-cake-3-square.jpg" alt="8">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-1-square.jpg" alt="9">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Oceania/Square/oceania-cake-3-square.jpg" alt="9">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-1-square.jpg" alt="9">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-2-square.JPG" alt="9">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/South-America/Square/south-america-cake-3-square.jpg" alt="9">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="paw-images/Africa/Square/africa-cake-3-3:4.jpeg" alt="9">
+      </div> -->
 
 
   </div>
 
-</div>
+  </div>
 
 
-<footer>
-  <!-- footer en colonne comme la quete 8 flexbox -->
-  
-  <div class="footer-desktop">
-    <h4 class="title-footer">About me</h4>
-    <a class="footer-link" href="concept.html">Presentation</a>
-    <a class="footer-link" href="contact.html">Contact me</a>
-    <a class="footer-link" href="gallery.html">Gallery</a>
-  </div>
-  <div class="footer-desktop">
-    <h5 class="title-footer">Partners</h5>
-    <a class="footer-link" href="https://www.pierreherme.com/">Pierre Hermé</a>
-    <a class="footer-link" href="https://www.facebook.com/zumbopatisserie/">Zumbo Patisserie</a>
-    <a class="footer-link" href="contact.html">Devenez partenaire</a>
-  </div>
-  <div>
+  <footer>
+    <!-- footer en colonne comme la quete 8 flexbox -->
+
+    <div class="footer-desktop">
+      <h4 class="title-footer">About me</h4>
+      <a class="footer-link" href="concept.html">Presentation</a>
+      <a class="footer-link" href="contact.html">Contact me</a>
+      <a class="footer-link" href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-desktop">
+      <h5 class="title-footer">Partners</h5>
+      <a class="footer-link" href="https://www.pierreherme.com/">Pierre Hermé</a>
+      <a class="footer-link" href="https://www.facebook.com/zumbopatisserie/">Zumbo Patisserie</a>
+      <a class="footer-link" href="contact.html">Devenez partenaire</a>
+    </div>
     <div>
-      <h6 class="follow" class="title-footer">Follow Me</h6>
+      <div>
+        <h6 class="follow" class="title-footer">Follow Me</h6>
+      </div>
+      <div class="div-follow">
+        <a class="a-follow" href="https://www.facebook.com/"><img class="img-social"
+            src="https://zupimages.net/up/20/11/vovy.png" alt="" width="50px" /></a>
+        <a class="a-follow" href="https://www.instagram.com/?hl=fr"><img class="img-social"
+            src="https://zupimages.net/up/20/11/8d72.png" alt="" width="50px" /></a>
+        <a class="a-follow" href="https://twitter.com/login?lang=fr"><img class="img-social"
+            src="https://zupimages.net/up/20/11/vzmu.png" alt="" width="50px" /></a>
+        <a class="a-follow" href="https://www.linkedin.com/feed"><img class="img-social"
+            src="https://zupimages.net/up/20/11/z0sa.png" alt="" width="50px" /></a>
+      </div>
     </div>
-    <div class="div-follow">
-      <a class="a-follow" href="https://www.facebook.com/"><img class="img-social"
-          src="https://zupimages.net/up/20/11/vovy.png" alt="" width="50px" /></a>
-      <a class="a-follow" href="https://www.instagram.com/?hl=fr"><img class="img-social"
-          src="https://zupimages.net/up/20/11/8d72.png" alt="" width="50px" /></a>
-      <a class="a-follow" href="https://twitter.com/login?lang=fr"><img class="img-social"
-          src="https://zupimages.net/up/20/11/vzmu.png" alt="" width="50px" /></a>
-      <a class="a-follow" href="https://www.linkedin.com/feed"><img class="img-social"
-          src="https://zupimages.net/up/20/11/z0sa.png" alt="" width="50px" /></a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="gallery-script.js"></script>
+  <script src="gallery-script.js"></script>
 </body>
+
 </html>
