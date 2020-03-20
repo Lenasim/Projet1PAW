@@ -63,9 +63,12 @@ function showSlides(n) {
 
 /* like button */
 // add numbers
-var add1 = function () {
-  document.getElementById("output").value = parseInt(document.getElementById("output").value, 10) + 1;
+var add1 = function (id) {
+  document.getElementById(id).value 
+  = parseInt(document.getElementById(id).value, 10) + 1;
 };
+
+
 // thumbs up icon
 function myFunction(x) {
   x.classList.toggle("fa-thumbs-down");
@@ -73,21 +76,3 @@ function myFunction(x) {
 
 
 
-
-
-
-
-
-
-
-
-
-// var buttons = document.querySelectorAll('.likebutton');
-
-// buttons.forEach(button => {
-//   button.addEventListener('click', event => {
-//     const myinput = event.target.querySelector('input');
-// console.log(myinput)
-//     myinput.value= myinput.value +1 
-//   });
-// })
