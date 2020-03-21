@@ -405,20 +405,9 @@ a.footer-link:hover {
 
 @media screen and (max-width: 600px) {
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:none;
   }
-  img.logo {
-    border-radius: 50%;
-    width: 12vw;
-    height: 12vw;
-}
   .nav {
-    display: none;
-  }
-  /* no side bar on mobile */
-  .sidenav {
     display: none;
   }
   .footer-desktop {
@@ -485,9 +474,9 @@ a.footer-link:hover {
     height: 15vw;
   }
   .logo {
-    width: 50px;
-    height: 50px;
-  }
+    width: 11vw;
+    height: 11vw;
+}
   .container1 .bloc:first-child {
     margin-top: 8%;
   }

@@ -53,12 +53,14 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+/* Header image is shown just on the main
+      lack of the height cause empty bottom part*/
+/* @media screen and (max-width: 600px) {
     .header-img {
         display: none;
     }
 
-}
+} */
 
 /*dark mode */
 
@@ -388,7 +390,7 @@ a.footer-link:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 0;
+        padding: 2%;
     }
     img.logo {
         border-radius: 50%;
@@ -467,14 +469,12 @@ a.footer-link:hover {
         height: 23vw;
     }
     .header-nav {
-        height: 15vw;
+        height: 11vw;
     }
     .logo {
-        width: 50px;
-        height: 50px;
+        width: 11vw;
+        height: 11vw;
     }
-    .container1 .bloc:first-child {
-        margin-top: 8%;
-    }
+
     /* END FOOTER MEDIA QUERIES*/
 }
