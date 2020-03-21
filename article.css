@@ -23,8 +23,8 @@ header {
 
 .logo {
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
+  width: 7vw;
+  height: 7vw;
 }
 
 .nav a {
@@ -32,7 +32,7 @@ header {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3rem;
   padding: 0 15px;
 }
 
@@ -151,8 +151,8 @@ header {
 }
 
 .img-social {
-  width: 35px;
-  height: 35px;
+  width: 7vw;
+  height: 7vw;
 }
 
 .slider>a {
@@ -409,11 +409,11 @@ a.footer-link:hover {
     justify-content: center;
     align-items: center;
   }
-  .logo {
+  img.logo {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
-  }
+    width: 12vw;
+    height: 12vw;
+}
   .nav {
     display: none;
   }
@@ -462,36 +462,36 @@ a.footer-link:hover {
     width: 40px;
   }
   /* End NAVBAR */
+  /* START FOOTER SOCIAL MEDIA QUERIES*/
   .div-follow {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .div-follow {
-    padding-bottom: 20px;
+    margin-top: 8%;
+    border: none;
   }
   .img-social {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-  }
-  .div-follow {
-    padding-bottom: 20px;
+    width: 7vw;
+    height: 7vw;
+    margin: 15px 5px;
   }
   h6.follow {
     display: none;
   }
   footer {
-    height: 110px;
+    height: 23vw;
   }
-  header {
-    height: 100px;
+  .header-nav {
+    height: 15vw;
   }
   .logo {
     width: 50px;
     height: 50px;
-    margin-bottom: 25px;
   }
+  .container1 .bloc:first-child {
+    margin-top: 8%;
+  }
+  /* END FOOTER MEDIA QUERIES*/
 }
 
 /* End Mobile Styles */

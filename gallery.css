@@ -17,7 +17,7 @@ body {
     align-items: center;
     background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top right / cover;
     padding: 5rem;
-    height: 13vw;
+    height: 12vw;
 }
 
 .header-text {
@@ -29,19 +29,21 @@ body {
 
 .word {
     font-family: 'Staatliches', cursive;
-  font-size: 16vw;
-  letter-spacing: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: pink;
-  -webkit-text-stroke: 1.5px rgb(255, 0, 0, 0.1);
+    font-size: 16vw;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: pink;
+    -webkit-text-stroke: 1.5px rgb(255, 0, 0, 0.1);
 }
+
 .header-text-s {
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .desc {
     font-family: 'Staatliches', cursive;
     font-size: 2vw;
@@ -51,11 +53,11 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .header-img {
         display: none;
     }
-}
+} */
 
 /* nav bar desktop */
 
@@ -66,13 +68,12 @@ body {
     align-items: center;
     background: linear-gradient(to right, #904e95, #e96443);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-    padding-right: 80px;
 }
 
 .logo {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 7vw;
+    height: 7vw;
 }
 
 .nav a {
@@ -80,7 +81,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     padding: 0 15px;
 }
 
@@ -115,33 +116,45 @@ body {
     display: block;
 }
 
+/* GALLLERY */
 
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
+
 /* GALLLERY */
-/* GALLLERY */
+
 /* js modal gallery */
-  .row:after {
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Create four equal columns that floats next to eachother */
-  .column {
+}
+
+/* Create four equal columns that floats next to eachother */
+
+.column {
     float: left;
     width: 23%;
     padding: 1%;
-  }
-  
-  /* The Modal (background) */
-  .modal {
+}
+
+/* The Modal (background) */
+
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -152,12 +165,12 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color:  rgba(0, 0, 0, 0.6);
-    
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content */
+
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -165,33 +178,34 @@ body {
     width: 90%;
     height: 90%;
     max-width: 700px;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover, .close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Hide the slides by default */
-  .mySlides {
+}
+
+/* Hide the slides by default */
+
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -205,56 +219,58 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* Caption text */
-  .caption-container {
+}
+
+/* Caption text */
+
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
-  
-  img.demo {
-    opacity: 0.8;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  
-  img.hover-shadow {
-    transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
+img.demo {
+    opacity: 0.8;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* like button */
+
 .likebutton {
     border: none;
     outline: 0;
@@ -266,7 +282,7 @@ body {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
+}
 
 .column input[type=text] {
     background-color: #DE4A6A;
@@ -274,16 +290,22 @@ body {
     width: 15%;
     border: none;
     padding left: 1%;
-  }
+}
 
+/* original gallery */
 
 /* original gallery */
+
 /* original gallery */
+
 /* original gallery */
+
 /* original gallery */
+
 /* original gallery */
+
 /* original gallery */
-/* original gallery */
+
 /* original gallery */
 
 .gallery {
@@ -422,8 +444,8 @@ a.footer-link:hover {
     }
     img.logo {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 12vw;
+        height: 12vw;
     }
     .nav {
         display: none;
@@ -473,36 +495,34 @@ a.footer-link:hover {
         width: 40px;
     }
     /* End NAVBAR */
-    /* START FOOTER MEDIA QUERIES*/
+    /* START FOOTER SOCIAL MEDIA QUERIES*/
     .div-follow {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .div-follow {
-        padding-bottom: 20px;
+        margin-top: 8%;
+        border: none;
     }
     .img-social {
-        width: 40px;
-        height: 40px;
+        width: 7vw;
+        height: 7vw;
         margin: 15px 5px;
-    }
-    .div-follow {
-        padding-bottom: 20px;
     }
     h6.follow {
         display: none;
     }
     footer {
-        height: 120px;
+        height: 23vw;
     }
-    header-nav {
-        height: 100px;
+    .header-nav {
+        height: 15vw;
     }
     .logo {
         width: 50px;
         height: 50px;
-        margin-bottom: 25px;
+    }
+    .container1 .bloc:first-child {
+        margin-top: 8%;
     }
     /* END FOOTER MEDIA QUERIES*/
 }
