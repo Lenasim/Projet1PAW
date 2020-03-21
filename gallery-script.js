@@ -1,6 +1,3 @@
-
-
-
 /* js modal gallery */
 
 function openModal() {

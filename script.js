@@ -68,5 +68,8 @@ $(document).ready(function () {
 
 
 
+/* contact send button message */
 
-
+function submitted() {
+    alert ("Thank you for contacting me! \nYour message has been sent. I'll get you as soon as possible.")
+}
