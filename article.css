@@ -150,11 +150,6 @@ header {
   max-height: 700px;
 }
 
-.img-social {
-  width: 7vw;
-  height: 7vw;
-}
-
 .slider>a {
   display: inline-flex;
   width: 1.5rem;
@@ -274,14 +269,6 @@ header {
   opacity: .6;
 }
 
-footer {
-  background: #e96443;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #904e95, #e96443);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #904e95, #e96443);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 /* tablet */
 
@@ -317,6 +304,7 @@ footer {
   background: -webkit-linear-gradient(to right, #904e95, #e96443);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #904e95, #e96443);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 200px;
   bottom: 0;
   width: 100%;
@@ -354,6 +342,7 @@ a.footer-link:hover {
 .a-follow {
   margin: 5px;
 }
+/* end footer */
 
 @media screen and (min-width: 601px) {
   .a-follow:hover {
@@ -395,7 +384,7 @@ a.footer-link:hover {
   }
   footer {
     height: 100px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
   .logo {
     width: 70px;
