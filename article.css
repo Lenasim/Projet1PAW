@@ -299,12 +299,7 @@ header {
 /*footer*/
 
 footer {
-  background: #e96443;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #904e95, #e96443);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #904e95, #e96443);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background:  #ee5253;
   height: 200px;
   bottom: 0;
   width: 100%;
@@ -406,18 +401,13 @@ a.footer-link:hover {
   .navbar {
     display: flex;
     justify-content: space-around;
-    background: #e96443;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #904e95, #e96443);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #904e95, #e96443);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:  #ee5253;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1;
-    border-top: white solid 0.4px;
+    /* border-top: white solid 0.4px; */
   }
   /* Style the links inside the navigation bar */
   .navbar a {
@@ -451,7 +441,7 @@ a.footer-link:hover {
   .img-social {
     width: 7vw;
     height: 7vw;
-    margin: 15px 5px;
+    margin: 15px 5px 50px 5px;
   }
   h6.follow {
     display: none;
