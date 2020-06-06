@@ -173,8 +173,8 @@ body {
     height: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-gap: 3rem;
 }
 
 
