@@ -53,15 +53,6 @@ body {
     color: white;
 }
 
-/* Header image is shown just on the main
-      lack of the height cause empty bottom part*/
-/* @media screen and (max-width: 600px) {
-    .header-img {
-        display: none;
-    }
-
-} */
-
 /*dark mode */
 
 .dark-mode {
@@ -173,43 +164,21 @@ body {
 /* continent cards */
 
 .container {
-    max-width: 1280px;
     margin-top: 1%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 100%;
     position: relative;
-}
-
-.swiper-container {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 1rem;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
 .bloc {
-    margin: 2% 0%;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -223,7 +192,7 @@ body {
 
 .cards {
     border-radius: 20px 20px 0 0;
-    max-width: 100%;
+    max-width: 100%;    
     display: block;
     height: auto;
 }
@@ -380,8 +349,7 @@ a.footer-link:hover {
    
    /* mobile nav */
     .bloc {
-        width: 70%;
-        margin: 3%;
+        margin: 3% auto;
     }
     .header-nav {
         /* display: flex;
